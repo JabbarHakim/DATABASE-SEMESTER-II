@@ -32,7 +32,7 @@ CREATE TABLE `dosen` (
   `Tempat_Lahir` varchar(25) NOT NULL,
   `Tangga_Lahir` date NOT NULL,
   `No_HP` varchar(25) DEFAULT NULL,
-  `ID_Dosen` varchar(25) NOT NULL
+  `ID_Dosen` char(25) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
@@ -42,7 +42,7 @@ CREATE TABLE `dosen` (
 --
 
 CREATE TABLE `mahasiswa` (
-  `NPM` varchar(25) NOT NULL,
+  `NPM` char(25) NOT NULL,
   `Nama` varchar(25) NOT NULL,
   `Tempat_Lahir` varchar(25) NOT NULL,
   `Tanggal_Lahir` date NOT NULL,
@@ -56,9 +56,9 @@ CREATE TABLE `mahasiswa` (
 --
 
 CREATE TABLE `matakuliah` (
-  `ID_MataKuliah` varchar(25) NOT NULL,
+  `ID_MataKuliah` char(25) NOT NULL,
   `Nama` varchar(25) NOT NULL,
-  `SKS` varchar(10) NOT NULL,
+  `SKS` char(10) NOT NULL,
   `Semester` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
